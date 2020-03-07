@@ -3,9 +3,9 @@
 ## Hints
 | Step | √ | Requirement |
 | :---: | :---: | :--- 
-| 01 |  | Use Splinter to navigate the sites when needed and BeautifulSoup to help find and parse out the necessary data.
-| 02 | | Use Pymongo for CRUD applications for your database. For this homework, you can simply overwrite the existing document each time the `/scrape` url is visited and new data is obtained.
-| 03 | | Use Bootstrap to structure your HTML template.
+| 01 |  √ | Use Splinter to navigate the sites when needed and BeautifulSoup to help find and parse out the necessary data.
+| 02 | √| Use Pymongo for CRUD applications for your database. For this homework, you can simply overwrite the existing document each time the `/scrape` url is visited and new data is obtained.
+| 03 | √ | Use Bootstrap to structure your HTML template.
 
 ### NASA Mars News
 | Step  | √ | Requirement |
@@ -74,32 +74,32 @@ Use MongoDB with Flask templating to create a new HTML page that displays all of
 | Step | √ | Requirement |
 | :---: | :---: | :--- 
 | 01 | √ | Start by converting your Jupyter notebook into a Python script called `scrape_mars.py` with a function called `scrape` that will execute all of your scraping code from above and return one Python dictionary containing all of the scraped data.
-| 02 | | Next, create a route called `/scrape` that will import your `scrape_mars.py` script and call your `scrape` function.
-| 03 | | Store the return value in Mongo as a Python dictionary.
-| 04 | | Create a root route `/` that will query your Mongo database and pass the mars data into an HTML template to display the data.
-| 05 | | Create a template HTML file called `index.html` that will take the mars data dictionary and display all of the data in the appropriate HTML elements. Use the following as a guide for what the final product should look like, but feel free to create your own design.
-| 06 | | [final_app_part1.png](Images/final_app_part1.png)
-| 07 | | [final_app_part2.png](Images/final_app_part2.png)
+| 02 | √ | Next, create a route called `/scrape` that will import your `scrape_mars.py` script and call your `scrape` function.
+| 03 | √ | Store the return value in Mongo as a Python dictionary.
+| 04 | √ | Create a root route `/` that will query your Mongo database and pass the mars data into an HTML template to display the data.
+| 05 | √ | Create a template HTML file called `index.html` that will take the mars data dictionary and display all of the data in the appropriate HTML elements. Use the following as a guide for what the final product should look like, but feel free to create your own design.
+| 06 | √ | [final_app_part1.png](Images/final_app_part1.png)
+| 07 | √ | [final_app_part2.png](Images/final_app_part2.png)
 
 ## Step 3 - Submission
 | Step | √ | Requirement |
 | :---: | :---: | :--- 
 | 01 | √ | upload the  Jupyter Notebook containing the scraping code used
-| 02 | | upload Screenshots of your final application
+| 02 | √ | upload Screenshots of your final application
 
 ### From the grading rubric pdf:
 | Step | √ | Requirement |
 | :---: | :---: | :--- 
-| 01 | | Jupyter: Scrapes the most recent NASA news
-| 02 | | Jupyter: Scrapes the URL for the featured image
-| 03 | | Jupyter: Scrapes the latest weather from twitter
-| 04 | | Jupyter: Scrapes all 4 hemisphere image urls
-| 05 | | Jupyter: Scrapes the Mars facts HTML table
-| 06 | | Flask: Has Routes for loading the webpage and scraping the content
-| 07 | | Flask: Connects, fetches, and inserts data to and from a mongoDB without error
-| 08 | | Flask: Correctly returns a rendered template and passes it a variable of the scraped data
-| 09 | | Flask: Calls scrape method from an external python module
-| 10 | | Web app: Landing page loads even before scraping index.html includes a button to the scrape routes
-| 11 | | Web app: Uses jinja to load data from the variable passed by flask
-| 13 | | Web app: Uses bootstrap to style the webpage
-| 14 | | Web app: Facts table renders correctly
+| 01 | √ | Jupyter: Scrapes the most recent NASA news
+| 02 | √ | Jupyter: Scrapes the URL for the featured image
+| 03 | √ | Jupyter: Scrapes the latest weather from twitter
+| 04 | √ | Jupyter: Scrapes all 4 hemisphere image urls
+| 05 | √ | Jupyter: Scrapes the Mars facts HTML table
+| 06 | √ | Flask: Has Routes for loading the webpage and scraping the content
+| 07 | √ | Flask: Connects, fetches, and inserts data to and from a mongoDB without error
+| 08 | √ | Flask: Correctly returns a rendered template and passes it a variable of the scraped data
+| 09 | √ | Flask: Calls scrape method from an external python module
+| 10 | √ | Web app: Landing page loads even before scraping index.html includes a button to the scrape routes
+| 11 | √ | Web app: Uses jinja to load data from the variable passed by flask
+| 13 | √ | Web app: Uses bootstrap to style the webpage
+| 14 | √ | Web app: Facts table renders correctly
